@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerador de CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Gerador de <span>CSS</span></h1>
+    <p class="subtitulo">Produza seu CSS aqui</p>
+
+    <textarea
+        class="caixa-texto"
+        placeholder="Ex.: uma bola branca balançando"
+        aria-label="Descreva o código que deseja gerar"
+    ></textarea>
+
+    <button class="botao-gerar" type="button">Gerar código</button>
+
+    <section class="area-saida">
+        <h2>Código</h2>
+        <pre class="bloco-codigo"><code></code></pre>
+
+        <h2>Prévia</h2>
+        <iframe
+            class="resultado-codigo"
+            title="Prévia do código gerado"
+            sandbox="allow-scripts"
+        ></iframe>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+COMO PUBLICAR COM A CHAVE DA GROQ SEGURA
+
+1. Envie esta pasta para um repositório no GitHub.
+2. Na Vercel, importe esse repositório como um novo projeto.
+3. Em Settings > Environment Variables, crie:
+   Nome: GROQ_API_KEY
+   Valor: sua NOVA chave da Groq
+4. Marque os ambientes em que deseja usar a variável (Production, Preview e/ou Development).
+5. Faça o deploy/redeploy.
+
+IMPORTANTE:
+- Não escreva a chave gsk_... em index.html, scripts.js ou api/chat.js.
+- O front-end chama /api/chat. A função api/chat.js é quem usa a chave no servidor.
+- Se a chave antiga apareceu em código público, revogue-a e crie outra.
